@@ -12,7 +12,7 @@ A = zeros(0,100);
 i=0;
 
 %Skapar en list med alla heltal mellan 1 och 100 som kommer användas som x
-%värden i funktionen
+%värden i plotten
 N=(0:100);
 
 %En loop för att skapa våra y värden till plotten

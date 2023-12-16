@@ -14,7 +14,7 @@ p3 = @(x) P(3, x);
 p4 = @(x) P(4, x);
 p6 = @(x) P(6, x);
 
-
+%plottar funktionerna
 fplot(p0,[-4 4])
 hold on 
 fplot(p1,[-4 4])
@@ -24,3 +24,6 @@ fplot(p6,[-4 4])
 fplot(f,[-4 4])
 
 ylim([0, 2])
+
+%namnger alla funktioner
+legend('p0','p1','p3','p4','p6','f')
