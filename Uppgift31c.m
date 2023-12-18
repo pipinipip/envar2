@@ -39,7 +39,13 @@ grid on
 % Skriv ut förklaring av graferna
 legend(["fel för riemann", "fel för trapets" , "fel för simpson"])
 
+% Justera storleken på figuren som [bredd, höjd]
+fig = gcf;
+fig.Units = "centimeters";
+fig.Position(3:4) = [16, 8];
 
+% Exportera figuren som pdf
+exportgraphics(fig, "uppgift31c.pdf")
 
 
 

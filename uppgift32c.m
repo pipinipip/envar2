@@ -21,3 +21,11 @@ fplot(G5,[0 2])
 
 %namnger de 5 olika funktionerna
 legend('n=1','n=2','n=3','n=4','n=5')
+
+% Justera storleken på figuren som [bredd, höjd]
+fig = gcf;
+fig.Units = "centimeters";
+fig.Position(3:4) = [16, 8];
+
+% Exportera figuren som pdf
+exportgraphics(fig, "uppgift32c.pdf")

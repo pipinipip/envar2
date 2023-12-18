@@ -43,16 +43,12 @@ xlim([0, 1.1])
 % Skriv ut förklaring av graferna
 legend(["riemann", "trapets" , "simpson", "Exakt svar"])
 
-
-% Nedan följer kod för att exportera figuren som PDF
+% kod för att exportera figuren som PDF
 
 % Justera storleken på figuren som [bredd, höjd]
 fig = gcf;
 fig.Units = "centimeters";
 fig.Position(3:4) = [16, 8];
 
-% Om det behövs: förstora textstorleken i figuren. Behövdes ej här.
-% fontsize(gca, scale=1.5)
-
 % Exportera figuren som pdf
-exportgraphics(fig, "uppgift2b.pdf")
+exportgraphics(fig, "uppgift31b.pdf")

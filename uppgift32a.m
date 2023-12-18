@@ -27,3 +27,11 @@ ylim([0, 2])
 
 %namnger alla funktioner
 legend('p0','p1','p3','p4','p6','f')
+
+% Justera storleken på figuren som [bredd, höjd]
+fig = gcf;
+fig.Units = "centimeters";
+fig.Position(3:4) = [16, 8];
+
+% Exportera figuren som pdf
+exportgraphics(fig, "uppgift32a.pdf")

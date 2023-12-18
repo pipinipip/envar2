@@ -24,3 +24,11 @@ end
 %skapar en plot
 plot (N,A,"x")
 legend('= r')
+
+% Justera storleken på figuren som [bredd, höjd]
+fig = gcf;
+fig.Units = "centimeters";
+fig.Position(3:4) = [16, 8];
+
+% Exportera figuren som pdf
+exportgraphics(fig, "uppgift32b2.pdf")
